@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>session1</title>
+    <script defer src="main.js"></script>
+    <!--
+      1. head 안에 script 태그 선언 시
+        - js 파일이 크거나 인터넷 속도가 느릴 경우 로딩 시간이 길어짐
+      2. body 안에 script 태그 선언 시
+        - html 요소는 빨리 볼 수 있으나, js 파일에 의존적이라면
+          유효한 요소를 보기까지 시간이 오래 걸림
+      3. head 안에 script + async 태그 선언 시
+        - 2번 보다는 js fetching이 병렬적으로 이루어지므로 시간 절약,
+          js 파일을 불러오는 동안 요소가 정의 X,
+          js fetching을 위해 parsing이 멈출 수도 있음
+      4. head 안에 script + defer 태그 선언 시
+        - async는 선언 순서와 상관 없이 js 파일을 실행하므로,
+          순서에 의존적이라면 문제가 발생할 수 있음
+          하지만 defer은 js 파일을 선언 순서대로 실행함
+    -->
+  </head>
+  <body></body>
+</html>

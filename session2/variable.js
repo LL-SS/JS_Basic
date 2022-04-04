@@ -14,6 +14,8 @@ Variable
     - primitive, single item: number, string, boolean, null, undefined, symbol
     - object, box container
     - function, first-class function (함수도 자료형 취급)
+    - Immutable data types : primitive, frozen (i.e. object.freeze())
+    - Mutable data types : all objects by default
 */
 let globalName = 'mark';
 {
